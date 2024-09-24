@@ -135,7 +135,6 @@ export default {
       this.currencyTitle = this.currencyTitles[this.currencyIndex];
       const currentCurrency = this.currencies[this.currencyIndex];
 
-
       this.currencyTxt = currentCurrency;
       this.items = this.items.map((item, i) => {
         if(this.currencyIndex === 0){
@@ -150,6 +149,51 @@ export default {
         }
       });
 
+    },
+    async batchRequest(batchBodies, b, resultData){
+      await new Promise((resolve, reject) => {
+        BX24.callBatch(batchBodies[b], (res) => {
+          let data;
+          for( let i = 0; i < Object.keys(batchBodies[b]).length; i++ ){
+            let key = `crm${i}`;
+            data = res[key].data();
+            resultData.push(data);
+          }
+          resultData = resultData.flat();
+          this.items = resultData;
+          this.mapItems();
+          resolve(resultData);
+        });
+      })
+    },
+    mapItems(){
+
+      let timeout = 0;
+      if(document.querySelectorAll('th').length === 0){
+        timeout = 200;
+      }
+
+      setTimeout(() => {
+        document.querySelectorAll('th').forEach((title, index) => {
+          title.querySelector('span').innerText = this.fields[this.select[index]].title;
+        });
+      }, timeout);
+
+      this.items = this.items.map((item, i) => {
+        if(item.OPPORTUNITY === null){
+          item.OPPORTUNITY = '0.00';
+        }
+        this.opportunities[i] = item.OPPORTUNITY;
+        item.CURRENCY_ID
+
+        const needle = item.STAGE_ID.replace("C3:", '');
+        const matchingData = this.dealsStatuses.find((item) => item.STATUS_ID === needle);
+
+        return {
+          ...item,
+          STAGE_ID: matchingData ? matchingData.NAME : 'Пользовательская стадия',
+        };
+      });
     },
     async handleSubmit() {
       let maxTotal = 50;
@@ -174,12 +218,14 @@ export default {
           if (res.data()) {
             total = res.total();
             this.items = res.data();
+            this.mapItems();
             resolve(this.items);
           }
         });
       });
 
       let batchCount = 0;
+
       if(total > maxTotal){
         let b;
         let iterations = Math.ceil(total / maxTotal);
@@ -207,48 +253,20 @@ export default {
 
         b = 0;
         let resultData = [];
-        let timerId = setInterval(async() => {
-          await new Promise((resolve, reject) => {
-            BX24.callBatch(
-              batchBodies[b], (res) => {
-              let data;
-              for( let i = 0; i < Object.keys(batchBodies[b]).length; i++ ){
-                let key = `crm${i}`;
-                data = res[key].data();
-                resultData.push(data);
-              }
-              resolve(resultData);
-            });
-          })
+        this.batchRequest(batchBodies, b, resultData);
+        b++;
+
+        if(batchCount > 1){
+          let timerId = setInterval(async() => {
+          this.batchRequest(batchBodies, b, resultData);
           b++;
-          if(b === batchCount){ 
-            clearInterval(timerId); 
-            resultData = resultData.flat();
-          this.items = resultData;
+          if(b === batchCount){
+            clearInterval(timerId);
           }
         }, 2000);
-      }
-      
-      setTimeout(() => {
-        this.items = this.items.map((item, i) => {
-        if(item.OPPORTUNITY === null){
-          item.OPPORTUNITY = '0.00';
         }
-        this.opportunities[i] = item.OPPORTUNITY;
-        item.CURRENCY_ID
-        const needle = item.STAGE_ID.replace("C3:", '');
-        const matchingData = this.dealsStatuses.find((item) => item.STATUS_ID === needle);
-        return {
-          ...item,
-          STAGE_ID: matchingData ? matchingData.NAME : 'Пользовательская стадия',
-        };
-      });
 
-      document.querySelectorAll('th').forEach((title, index) => {
-        title.querySelector('span').innerText = this.fields[this.select[index]].title;
-      });  
-      }, 2000 * batchCount + 300);
-
+      }
     }
   },
   async mounted(){
