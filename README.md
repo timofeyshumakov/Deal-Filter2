@@ -21,6 +21,7 @@
   <br></br>
   <tr>
     <td><img  width="600px" src="https://github.com/user-attachments/assets/f8bceb58-abaf-46d6-98f9-b512eb7c51e4"><div align="center">Конвертация валют</div></td>
+    <td><img  width="600px" src="https://github.com/user-attachments/assets/7c52902a-b060-4b7e-ab0d-52feb0127361"><div align="center">Смена темы</div></td>
   </tr>
 </table>
 <h3>Понравилось приложение? <b>закажите</b> похожее: <a target="_blank" href="https://t.me/timofey_bitrix24"><img alt="telegram"  width="28px" height="28px" title="telegram" src="https://github.com/user-attachments/assets/9092b79a-c4e0-45e0-af75-86ce4ad47b8b"></a> <a target="_blank" href="https://vk.com/timofey_bitrix24"><img  width="28px" height="28px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/93ea1801-dd33-43ad-99c1-79c41c8ddfbd"></a></h3>
