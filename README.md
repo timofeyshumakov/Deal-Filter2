@@ -14,7 +14,6 @@
 <h4>Затрачено времени: 3 дня на разработку и 1 день на тестирование</h4>
 <h4>Демонстрация работы приложения:</h4>
 <img  width="600px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a">
-<img  width="600px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/26f647ae-7f05-4cd5-baf9-67da0ac1e5b4">
-<img  width="600px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/846c1df8-28c1-42b2-9d3c-225ca769b5d8">
+<img  width="600px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/f8bceb58-abaf-46d6-98f9-b512eb7c51e4">
+<img  width="600px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/b5c3c3a6-b72c-4ff1-abb5-aa56b5e80dde">
 <h3>Понравилось приложение? <b>закажите</b> похожее: <a target="_blank" href="https://t.me/timofey_bitrix24"><img alt="telegram"  width="32px" height="32px" title="telegram" src="https://github.com/user-attachments/assets/9092b79a-c4e0-45e0-af75-86ce4ad47b8b"></a> <a target="_blank" href="https://vk.com/timofey_bitrix24"><img  width="32px" height="32px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/93ea1801-dd33-43ad-99c1-79c41c8ddfbd"></a></h3>
-
