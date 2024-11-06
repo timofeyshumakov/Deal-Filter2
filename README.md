@@ -16,7 +16,7 @@
 <table width="100%" cellSpacing="5" cellpadding="5" border="1">
   <tr>
     <td><img  style="border: 1px black solid;" width="600px" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a"><div>Начальный экран</div></td>
-    <td><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"><div>Получение данных</div></td>
+    <td><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"><div align="center">Получение данных</div></td>
   </tr>
   <br></br>
   <tr>
