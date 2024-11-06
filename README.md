@@ -13,7 +13,7 @@
 <h4>Было выделенно времени: 4 дня</h4>
 <h4>Затрачено времени: 3 дня на разработку и 1 день на тестирование</h4>
 <h4>Демонстрация работы приложения:</h4>
-<table style="width: 100%; cellspacing="8px" cellpadding="8px">
+<table style="width: 100%; cellspacing="5" cellpadding="5">
   <tr>
     <td><img  style="border: 1px black solid;" width="600px" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a"><div>Начальный экран</div></td>
     <td><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"><div>Получение данных</div></td>
