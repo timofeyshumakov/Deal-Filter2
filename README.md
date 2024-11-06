@@ -14,9 +14,11 @@
 <h4>Затрачено времени: 3 дня на разработку и 1 день на тестирование</h4>
 <h4>Демонстрация работы приложения:</h4>
 <table>
-  <tr><img  style="border: 1px black solid;" width="600px" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a"></tr>
-  <tr><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"></tr>
-  <tr><img  width="600px" src="https://github.com/user-attachments/assets/f8bceb58-abaf-46d6-98f9-b512eb7c51e4"></tr>
+  <tr>
+    <td><img  style="border: 1px black solid;" width="600px" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a"></td>
+    <td><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"></td>
+    <td><img  width="600px" src="https://github.com/user-attachments/assets/f8bceb58-abaf-46d6-98f9-b512eb7c51e4"></td>
+  </tr>
 </table>
 <h3>Понравилось приложение? <b>закажите</b> похожее: <a target="_blank" href="https://t.me/timofey_bitrix24"><img alt="telegram"  width="28px" height="28px" title="telegram" src="https://github.com/user-attachments/assets/9092b79a-c4e0-45e0-af75-86ce4ad47b8b"></a> <a target="_blank" href="https://vk.com/timofey_bitrix24"><img  width="28px" height="28px" alt="vk" title="vk" src="https://github.com/user-attachments/assets/93ea1801-dd33-43ad-99c1-79c41c8ddfbd"></a></h3>
 
