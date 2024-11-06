@@ -19,7 +19,7 @@
     <td><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"><div align="center">Получение данных</div></td>
   </tr>
   <br></br>
-  <tr>
+  <tr align="start">
     <td><img  width="600px" src="https://github.com/user-attachments/assets/f8bceb58-abaf-46d6-98f9-b512eb7c51e4"><div align="center">Конвертация валют</div></td>
     <td><img  width="600px" src="https://github.com/user-attachments/assets/7c52902a-b060-4b7e-ab0d-52feb0127361"><div align="center">Смена темы</div></td>
   </tr>
