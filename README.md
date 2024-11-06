@@ -15,7 +15,7 @@
 <h4>Демонстрация работы приложения:</h4>
 <table>
   <tr>
-    <td><img  style="border: 1px black solid;" width="600px" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a"><span>Начальный экран</span></td>
+    <td><img  style="border: 1px black solid;" width="600px" src="https://github.com/user-attachments/assets/0abdbe27-4f6a-4297-b0ee-06e6221e200a"><div>Начальный экран</div></td>
     <td><img  width="600px" src="https://github.com/user-attachments/assets/d52b6cf1-c3eb-488a-a4be-2db9767bfa8e"></td>
     <td><img  width="600px" src="https://github.com/user-attachments/assets/f8bceb58-abaf-46d6-98f9-b512eb7c51e4"></td>
   </tr>
