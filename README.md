@@ -1,4 +1,4 @@
-<h2>Таблица со сделками</h2>
+<h2 align="center">Таблица со сделками</h2>
 <div width="100%" align="center">
 <table width="600px" cellSpacing="1" cellpadding="1" border="1">
 <tr><td><img  width="600px" src="https://github.com/user-attachments/assets/dc4bbf1a-164e-4266-9e76-7b9f44857baf"></td></tr>
